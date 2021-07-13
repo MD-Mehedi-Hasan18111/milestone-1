@@ -1,0 +1,265 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header Section Styles */
+nav{
+    background-color: rgb(73, 73, 241);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+}
+
+nav .logo-area h3{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 28px;
+    color: #fff;
+    text-shadow: 0 20px 30px #fff;
+}
+
+.nav-menu a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    margin-right: 30px;
+    font-weight: 700;
+}
+
+.nav-menu a:hover{
+    color: red;
+}
+
+/* Container Styles */
+.container{
+    width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 100px;
+    align-items: center;
+    margin-left: 200px;
+}
+
+/* Top Banner Section and About Section Styles */
+.section-info h2{
+    color: #34495e;
+    font-size: 40px;
+    margin-bottom: 0;
+}
+
+.blue{
+    color:rgb(73, 73, 241)
+}
+
+.section-info p{
+    color: #7f8c8d;
+    font-size: 18px;
+    padding-bottom: 20px;
+    text-align: justify;
+    margin-top: 5px;
+}
+
+.section-info a{
+    text-decoration: none;
+    background: #000046;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 15px 30px;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.section-image img{
+    width: 100%;
+}
+
+.about{
+    background-image: url('images/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0;
+}
+
+/* Recipies Styles */
+
+.recipie-section{
+    padding: 50px 0;
+}
+
+.recipie-intro{
+    text-align: center;
+}
+
+.recipie-intro h2{
+    color: #34495e;
+    font-size: 40px;
+    margin-bottom: 0;
+}
+
+.recipie-intro p{
+    color: #7f8c8d;
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+
+.recipies{
+    width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 200px;
+}
+
+.recipie{
+    background: #fff;
+    box-shadow:  0 10px 20px gray;
+    padding: 30px;
+    margin-right: 40px;
+    border-radius: 20px;
+}
+
+.recipie h3{
+    font-size: 22px;
+    margin-bottom: 0;
+    font-weight: 900;
+}
+
+.recipie-image img{
+    width: 100%;
+}
+
+/* Subscribers Section Styles */
+
+.subscribers{
+    width: 900px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 50px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px gray;
+    padding: 10px 20px;
+    margin: 0 0 50px 0;
+}
+
+
+/***********Contact Section*************/
+
+.contact{
+    background-image: url('images/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 3%;
+    padding-bottom: 5%;
+}
+
+.contact h1{
+    font-size: 40px;
+    font-weight: 900;
+    color: #2d3436;
+}
+
+.contact .form{
+    padding: 0 0 0 30%;
+}
+
+.contact label{
+    font-size: 25px;
+    color: red;
+}
+
+.contact .form input{
+    width: 400px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    border: 1px solid gray;
+    font-size: 18px;
+    text-indent: 10px;
+    padding: 5px
+}
+
+.contact .form textarea{
+    height: 200px;
+    width: 370px;
+    text-indent: 10px;
+    font-size: 18px;
+    border: 1px solid gray;
+}
+
+.contact .btn{
+    margin-left: 13%;
+    background: #0575E6;
+    background: -webkit-linear-gradient(to left, #021B79, #0575E6);
+    background: linear-gradient(to left, #021B79, #0575E6);
+    border: none;
+    padding: 15px 30px;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 50px;
+}
+
+/***************Footer Section*************/
+
+footer{
+    background-color: #000;
+    padding: 1% 0 4% 0;
+}
+
+.footer h1{
+    color: #2d3436;
+}
+
+.footer p{
+    color: #95a5a6;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 668px) {
+    nav{
+        flex-direction: column;
+        padding: 0;
+    }
+    .container{
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0;
+    }
+    
+    .recipies{
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0;
+    }
+
+    .recipie{
+        margin-top: 20px;
+    }
+
+    .subscribers{
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0;
+        margin: 0;
+    }
+
+    .contact .form{
+        padding: 10px;
+    }
+
+    .contact .form input, .contact .form textarea{
+        width: 100%;
+    }
+
+    .contact .btn{
+        margin: 0;
+    }
+
+    .footer{
+        padding: 0 20px;
+    }
+}
